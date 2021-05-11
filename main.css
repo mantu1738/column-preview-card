@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+   height: 100%;
+}
+
+.main-page{
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.main-page-inner{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.sedan{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    background-color: #e4a531;
+}
+.suv{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    background-color: darkcyan;
+}
+.luxury{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    background-color: darkgreen;
+}
