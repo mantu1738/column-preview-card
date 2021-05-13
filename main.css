@@ -10,32 +10,86 @@ body{
 }
 
 .main-page{
- height: 100vh;
  display: flex;
  justify-content: center;
  align-items: center;
 }
 .main-page-inner{
-    width: 80%;
+    max-width: 100%;
+   margin-top: 50px;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
 
+.cars{
+    flex: 0 0 60%;
+    max-width: 60%;
+    /* background-color: #e4a531; */
+    padding: 70px 50px;
+    position: relative;
+    
+}
+.cars-inner{
+    padding: 30px 10px;
+}
+.cars img{
+    position: absolute;
+    top: 10%;
+}
+.cars h1{
+    color: #fff;
+}
+.cars p {
+    padding: 20px 0;
+    font-size: 18px;
+    width: 70%;
+    color: #fff;
+}
+.cars a{
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 10%;
+    border-radius: 30px;
+    color: #000;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.cars a:hover,
+cars a:active{
+    background-color: transparent;
+    color: #fff;
+}
 .sedan{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    background-color: #e4a531;
+    background-color: orange;
 }
 .suv{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    background-color: darkcyan;
+background-color: #3f819b;
 }
 .luxury{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    background-color: darkgreen;
+    background-color: #08552e;
 }
+
+@media screen and (min-width:968px) {
+ .main-page-inner{
+     width: 80%;
+     flex-direction: row;
+     margin-top: 5%;
+ }
+ .cars{
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding: 100px 50px;
+ }
+ .cars-inner{
+     padding: 50px 10px;
+ }
+}
+
